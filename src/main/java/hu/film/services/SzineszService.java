@@ -56,7 +56,7 @@ public class SzineszService {
             updatingSzinesz.setAge(age);
             Optional<Film> optionalFilm = filmRepository.findById(films);
             if(optionalFilm.isPresent()) {
-                updatingSzinesz.setFilmek(optionalFilm.get());
+                updatingSzinesz.setFilm(optionalFilm.get());
                 return repository.save(updatingSzinesz);
             }
         }

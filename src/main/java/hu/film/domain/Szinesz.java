@@ -10,7 +10,7 @@ public class Szinesz {
     private String name;
     private int age;
     @ManyToOne
-    private Film films;
+    private Film film;
 
     public Szinesz(){
 
@@ -23,7 +23,7 @@ public class Szinesz {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", filmek=" + films +
+                ", film=" + film +
                 '}';
     }
 
@@ -51,12 +51,12 @@ public class Szinesz {
         this.age = age;
     }
 
-    public Film getFilmek() {
-        return (Film) films;
+    public Film getFilm() {
+        return film;
     }
 
-    public void setFilmek(Film film) {
-        this.films = films;
+    public void setFilm(Film film) {
+        this.film = film;
     }
 
 }
