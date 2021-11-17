@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Szinesz</title>
+</head>
+<body>
+<header class="container">
+    <h2>REST API webszolgáltatásai</h2>
+    <h3>Github <a href="https://github.com/DankoIstvan113c/filmWebService "target="_blank">repository</a>: https://github.com/DankoIstvan113c/filmWebService/tree/master</h3>
+</header>
+<main class="container">
+    <table class="table table-dark table-striped table-hover">
+        <tr>
+            <th>Metódus</th>
+            <th>URL</th>
+            <th>Szolgáltatás</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/films">/films</a></td>
+            <td>Filmek lisjáta</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/films/1">/categories/{id}</a></td>
+            <td>Egy film</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/films/1/szineszek">/films/{id}/szineszek</a></td>
+            <td>Egy film szereplői</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/films</td>
+            <td>Új film létrehozása</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/films/{id}</td>
+            <td>Film törlése</td>
+        </tr>
+        <tr>
+            <td>PATCH</td>
+            <td>/films/{id}/{hossz}</td>
+            <td>Film módosítása (hossz)</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/szineszek</td>
+            <td>Minden színész</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/szineszek/{id}</td>
+            <td>Egy színész</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/szineszek</td>
+            <td>Új színész felvitele</td>
+        </tr>
+        <tr>
+            <td>PATCH</td>
+            <td>/szineszek/{id}/{name}/{age}</td>
+            <td>Színész módosítása (név, kor)</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/szineszek/{id}</td>
+            <td>Színész módosítása (név, kor)</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/szineszek/{id}</td>
+            <td>Színész törlése</td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>
